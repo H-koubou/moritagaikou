@@ -1503,6 +1503,74 @@ a img {
   opacity: .7;
 }
 
+/*----------------------------------------------------
+	ローディングアニメーション
+----------------------------------------------------*/
+.loadingwrap {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transition: all .8s ease;
+  -webkit-transition: all .8s ease;
+  opacity: 100;
+  align-items: center;
+  -webkit-align-items: center;
+  display: flex;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.loadingwrap.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loadingwrap .loadingbox.transform {
+  transition: all .8s ease;
+  -webkit-transition: all .8s ease;
+}
+
+.loadingwrap .loadingbox > * {
+  display: inline-block;
+  margin: 0 30px 0 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.loadingwrap .loadingbox > *.visible {
+  visibility: visible;
+  opacity: 100;
+  transition: all .8s ease;
+  -webkit-transition: all .8s ease;
+}
+
+.loadingwrap .loadingbox > .imageright {
+  margin: 0 0 0 0;
+}
+
+.loadingwrap .loadingbox.transform > .imageleft {
+  transform: translateX(50px);
+  -webkit-transform: translateX(50px);
+}
+
+.loadingwrap .loadingbox.transform > .imagecenter {
+  transform: translateY(-55px);
+  -webkit-transform: translateY(-55px);
+}
+
+.loadingwrap .loadingbox.transform > .imageright {
+  transform: translateX(-50px);
+  -webkit-transform: translateX(-50px);
+}
+
 /* 個別スタイル */
 @font-face {
   font-family: 'orkneyfont';

@@ -49,3 +49,34 @@ const headerWrapHeight = document.getElementById("header").clientHeight;
 if(mainVisualWrap) {
   mainVisualWrap.style.height = `calc(100vh - ${headerWrapHeight}px)`;
 }
+
+
+/* ==================================================
+  ローディングアニメーション
+================================================== */
+const loadingWrap = document.getElementById('js-loading-wrap');
+const loadingBox = document.getElementById('js-loading-box');
+const loadingImageLeft = document.getElementById('js-loading-image-left');
+const loadingImageCenter = document.getElementById('js-loading-image-center');
+const loadingImageRight = document.getElementById('js-loading-image-right');
+
+loadingImageLeft.classList.add('visible');
+loadingImageLeft.addEventListener('transitionend', (evet) => {
+  loadingImageCenter.classList.add('visible');
+});
+loadingImageCenter.addEventListener('transitionend', (evet) => {
+  loadingImageRight.classList.add('visible');
+});
+
+loadingImageRight.addEventListener('transitionend', (evet) => {
+  loadingBox.classList.add('transform');
+});
+
+loadingImageRight.addEventListener('transitionend', (evet) => {
+  setTimeout(function(){
+    loadingWrap.classList.add('hidden');
+  }, 800);
+});
+
+
+
