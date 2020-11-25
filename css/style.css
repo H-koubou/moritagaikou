@@ -750,6 +750,12 @@ a img {
   padding: 0 25px;
 }
 
+@media screen and (max-width: 980px) {
+  .galleryitem {
+    padding: 0 20px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .galleryitem {
     display: block;
@@ -3670,128 +3676,72 @@ a img {
 }
 
 /* 施工じれい */
-.sitemap {
-  position: relative;
-  z-index: 0;
-  margin: 0 0 6.25%;
-}
-
-@media screen and (max-width: 480px) {
-  .sitemap {
-    padding: 40px 0 0;
-  }
-}
-
-.sitemap:before {
-  display: none;
-}
-
-.sitemap:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 500px;
-  background: #5C5A57;
-  opacity: .07;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-}
-
-.sitemap > .contents {
-  font-family: 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  font-weight: 400;
-  max-width: 720px;
-  width: 100%;
-  margin: 0 auto;
+.gallery > .title {
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 1.44118;
+  letter-spacing: 0.2em;
+  font-weight: bold;
+  text-align: center;
+  margin: 5.21% 0 2.6%;
+  padding: 0 30px;
 }
 
 @media screen and (max-width: 980px) {
-  .sitemap > .contents {
+  .gallery > .title {
     padding: 0 20px;
   }
 }
 
-.sitemap > .contents > .title {
-  font-size: 21px;
-  font-size: 2.1rem;
-  line-height: 1.71429;
-  letter-spacing: 0.12em;
-  text-align: center;
-  margin: 0 0 8.75%;
-}
-
-.sitemap > .contents > .contentsitem {
-  padding: 8.89%;
-  background: #fff;
-}
-
-@media screen and (max-width: 767px) {
-  .sitemap > .contents > .contentsitem {
-    padding: 30px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .sitemap > .contents > .contentsitem {
-    padding: 20px;
-  }
-}
-
-.sitemap > .contents > .contentsitem > .item {
-  line-height: 1.71429;
-  letter-spacing: 0.06em;
+.gallery > .catitem {
   align-items: center;
   -webkit-align-items: center;
   display: flex;
   display: -webkit-flex;
   -webkit-flex-direction: row;
   flex-direction: row;
-  -webkit-justify-content: flex-start;
-  justify-content: flex-start;
-  -webkit-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  flex: 1 1;
-  -webkit-flex: 1 1;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 30px;
+  margin: 0 0 4.69%;
+}
+
+@media screen and (max-width: 980px) {
+  .gallery > .catitem {
+    padding: 0 20px;
+  }
+}
+
+.gallery > .catitem > .item {
+  margin: 0 10px 10px 0;
+}
+
+.gallery > .catitem > .item > a {
+  font-family: 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.66667;
+  letter-spacing: 0.06em;
   color: #5C5A57;
-  margin: 0 0 6.67%;
+  padding: 6px 15px;
+  background: #EBE5DF;
 }
 
-@media screen and (max-width: 480px) {
-  .sitemap > .contents > .contentsitem > .item {
-    align-items: flex-start;
-    -webkit-align-items: flex-start;
-    display: flex;
-    display: -webkit-flex;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-    -webkit-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-  }
+.gallery > .catitem > .item > a.current {
+  color: #fff;
+  background: #5C5A57;
 }
 
-.sitemap > .contents > .contentsitem > .item:before {
-  content: "";
-  flex: 0 1 10px;
-  -webkit-flex: 0 1 10px;
-  width: 10px;
-  height: 10px;
-  background: #fff;
-  border: 1px solid #707070;
-  margin: 0 20px 0 0;
+.gallery > .galleryitem {
+  margin: 0 0 6.25%;
 }
 
-@media screen and (max-width: 480px) {
-  .sitemap > .contents > .contentsitem > .item:before {
-    flex: 0 0 10px;
-    -webkit-flex: 0 0 10px;
-    margin: 7px 10px 0 0;
-  }
-}
-
+/* -----------------------------------------------------------
+    GallerySingle
+----------------------------------------------------------- */
 /* ニュース */
 .news {
   position: relative;
