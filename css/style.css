@@ -1264,6 +1264,7 @@ a img {
   font-size: 34px;
   font-size: 3.4rem;
   line-height: 1.44118;
+  letter-spacing: 0.2em;
   margin: 0 0 30px;
 }
 
@@ -3742,6 +3743,213 @@ a img {
 /* -----------------------------------------------------------
     GallerySingle
 ----------------------------------------------------------- */
+.gallery-single > .gallerysingle-wrap {
+  max-width: calc(1200px + 60px);
+  width: 100%;
+  margin: 6.09% auto 30%;
+  padding: 0 30px;
+}
+
+@media screen and (max-width: 980px) {
+  .gallery-single > .gallerysingle-wrap {
+    max-width: calc(1200px + 40px);
+    padding: 0 20px;
+  }
+}
+
+.gallery-single > .gallerysingle-wrap > .contentsbox {
+  max-width: 720px;
+  width: 100%;
+  margin: -60px auto 0;
+  position: relative;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-single > .gallerysingle-wrap > .contentsbox {
+    margin: 0 auto;
+  }
+}
+
+.gallery-single > .gallerysingle-wrap > .contentsbox > .title {
+  font-family: 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  font-size: 2.1rem;
+  line-height: 1.71429;
+  letter-spacing: 0.12em;
+  font-weight: bold;
+  color: #000000;
+  padding: 36px 60px;
+  background: #ECEFEC;
+  margin: 0 0 26px;
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-single > .gallerysingle-wrap > .contentsbox > .title {
+    font-size: 16px;
+    font-size: 1.6rem;
+    line-height: 1.625;
+    padding: 25px 15px;
+  }
+}
+
+.gallery-single > .gallerysingle-wrap > .contentsbox > .detailbox {
+  font-family: 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-weight: 400;
+  line-height: 1.71429;
+  letter-spacing: 0.06em;
+  color: #5C5A57;
+}
+
+.gallery-single > .gallerysingle-wrap > .contentsbox > .detailbox .nameread {
+  font-size: 13px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: right;
+  margin: 0 0 40px;
+}
+
+.gallery-single > .gallerysingle-wrap > .contentsbox > .detailbox .read,
+.gallery-single > .gallerysingle-wrap > .contentsbox > .detailbox .image {
+  margin: 0 0 60px;
+}
+
+.gallery-single > .gallerysingle-wrap > .contentsbox > .detailbox .image {
+  text-align: center;
+}
+
+.gallery-single > .gallerysingle-wrap > .contentsbox > .voicebox {
+  padding: 60px;
+  background: #F8F6F4;
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-single > .gallerysingle-wrap > .contentsbox > .voicebox {
+    padding: 40px 20px;
+    margin: 10% 0 0;
+  }
+}
+
+.gallery-single > .gallerysingle-wrap > .contentsbox > .voicebox > .title {
+  font-family: 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  font-size: 2.1rem;
+  line-height: 1.71429;
+  letter-spacing: 0.12em;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  padding: 60px 0 0;
+  margin: 0 0 28px;
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-single > .gallerysingle-wrap > .contentsbox > .voicebox > .title {
+    padding: 30px 0 0;
+  }
+}
+
+.gallery-single > .gallerysingle-wrap > .contentsbox > .voicebox > .title:before {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #707070;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+}
+
+.gallery-single > .gallerysingle-wrap > .contentsbox > .voicebox > .read {
+  font-family: 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-weight: 400;
+  line-height: 1.71429;
+  letter-spacing: 0.06em;
+  color: #5C5A57;
+  margin: 0 0 28px;
+}
+
+.gallery-single > .gallerysingle-wrap > .contentsbox > .voicebox .voiceitem {
+  font-family: 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-weight: 400;
+  padding: 20px;
+  background: #fff;
+}
+
+.gallery-single > .gallerysingle-wrap > .contentsbox > .voicebox .voiceitem:not(:last-of-type) {
+  margin: 0 0 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-single > .gallerysingle-wrap > .contentsbox > .voicebox .voiceitem {
+    padding: 20px 15px;
+  }
+}
+
+.gallery-single > .gallerysingle-wrap > .contentsbox > .voicebox .voiceitem > .title {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.6875;
+  letter-spacing: 0.06em;
+  font-weight: bold;
+  color: #000000;
+  margin: 0 0 15px;
+}
+
+.gallery-single > .gallerysingle-wrap > .contentsbox > .voicebox .voiceitem > .title:before {
+  content: "Q.";
+  padding: 0 10px 0 0;
+}
+
+.gallery-single > .gallerysingle-wrap > .contentsbox > .voicebox .voiceitem > .read {
+  line-height: 1.71429;
+  letter-spacing: 0.06em;
+  color: #5C5A57;
+  margin: 0 0 0 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-single > .gallerysingle-wrap > .contentsbox > .voicebox .voiceitem > .read {
+    margin: 0 0 0 0;
+  }
+}
+
+.gallery-single > .gallerysingleitem-wrap {
+  position: relative;
+  z-index: 0;
+}
+
+.gallery-single > .gallerysingleitem-wrap > .icon {
+  position: absolute;
+  right: 10px;
+  top: -35%;
+  z-index: -1;
+}
+
+@media screen and (max-width: 980px) {
+  .gallery-single > .gallerysingleitem-wrap > .icon {
+    top: -25%;
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-single > .gallerysingleitem-wrap > .icon {
+    top: -12.5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-single > .gallerysingleitem-wrap > .icon {
+    top: -4%;
+    width: 100px;
+  }
+}
+
 /* ニュース */
 .news {
   position: relative;
